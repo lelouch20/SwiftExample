@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGround" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-qP-jyk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFp-oS-frz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m1f-6K-LpR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的位置" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaO-sp-qcj">
+                                            <rect key="frame" x="8" y="65" width="359" height="86"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="86" id="uXk-7J-qjy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmL-kl-G9o">
+                                            <rect key="frame" x="24" y="549" width="327" height="83"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="327" id="8Kr-OR-BRn"/>
+                                                <constraint firstAttribute="height" constant="83" id="i7J-Cx-eav"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="17"/>
+                                            <state key="normal" title="获取当前位置" backgroundImage="getLocationButton">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onClickGetLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmY-lo-RlH"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HaO-sp-qcj" firstAttribute="top" secondItem="m1f-6K-LpR" secondAttribute="top" constant="65" id="1xq-KM-741"/>
+                                        <constraint firstItem="nmL-kl-G9o" firstAttribute="centerX" secondItem="m1f-6K-LpR" secondAttribute="centerX" id="Jjt-p3-Vlr"/>
+                                        <constraint firstAttribute="bottom" secondItem="nmL-kl-G9o" secondAttribute="bottom" constant="35" id="KMe-Zk-hiw"/>
+                                        <constraint firstItem="HaO-sp-qcj" firstAttribute="centerX" secondItem="m1f-6K-LpR" secondAttribute="centerX" id="dHO-gz-56e"/>
+                                        <constraint firstItem="HaO-sp-qcj" firstAttribute="leading" secondItem="m1f-6K-LpR" secondAttribute="leading" constant="8" id="eXU-Nr-jDy"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K9B-qP-jyk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="4Tc-cj-ZrQ"/>
+                            <constraint firstItem="DFp-oS-frz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98Z-Ws-zfd"/>
+                            <constraint firstItem="DFp-oS-frz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="LJD-kW-hmj"/>
+                            <constraint firstItem="K9B-qP-jyk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Otr-YD-lQ6"/>
+                            <constraint firstItem="DFp-oS-frz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VOp-9E-LBd"/>
+                            <constraint firstItem="K9B-qP-jyk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWb-gI-Ydr"/>
+                            <constraint firstItem="K9B-qP-jyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="r6K-1r-lC8"/>
+                            <constraint firstItem="DFp-oS-frz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="x87-ax-zTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttomBlurView" destination="DFp-oS-frz" id="8uW-iX-UQV"/>
+                        <outlet property="getLocationButton" destination="nmL-kl-G9o" id="c0a-B0-b7V"/>
+                        <outlet property="locationLabel" destination="HaO-sp-qcj" id="RxR-Kn-ja8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backGround" width="375" height="667"/>
+        <image name="getLocationButton" width="326" height="78"/>
+    </resources>
+</document>
