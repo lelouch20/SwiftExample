@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicLoginView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-02-Nvn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPy-lm-USI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS7-dn-PJ5">
+                                <rect key="frame" x="38" y="517" width="299" height="44"/>
+                                <color key="backgroundColor" red="0.089431285860000001" green="0.68066966529999995" blue="0.01182749867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Md-MI-dOb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idp-aP-QP6">
+                                <rect key="frame" x="38" y="579" width="299" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.089431285860000001" green="0.68066966529999995" blue="0.01182749867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerTitle" translatesAutoresizingMaskIntoConstraints="NO" id="03M-9E-EiA">
+                                <rect key="frame" x="78" y="49" width="218" height="66"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o2V-02-Nvn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0tX-WN-2lH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="idp-aP-QP6" secondAttribute="bottom" constant="44" id="2sd-BD-kyA"/>
+                            <constraint firstItem="o2V-02-Nvn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3FE-tr-a4a"/>
+                            <constraint firstItem="03M-9E-EiA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="400-dp-0bJ"/>
+                            <constraint firstItem="o2V-02-Nvn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="622-t5-6du"/>
+                            <constraint firstItem="XS7-dn-PJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ae-6w-9eS"/>
+                            <constraint firstItem="03M-9E-EiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BW8-CJ-fGS"/>
+                            <constraint firstItem="WPy-lm-USI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="GUS-9F-T39"/>
+                            <constraint firstItem="WPy-lm-USI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K2o-K4-Sao"/>
+                            <constraint firstItem="idp-aP-QP6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgZ-LJ-Imy"/>
+                            <constraint firstItem="idp-aP-QP6" firstAttribute="height" secondItem="XS7-dn-PJ5" secondAttribute="height" id="Ux6-Zc-Xle"/>
+                            <constraint firstItem="idp-aP-QP6" firstAttribute="top" secondItem="XS7-dn-PJ5" secondAttribute="bottom" constant="18" id="b35-TE-orY"/>
+                            <constraint firstItem="idp-aP-QP6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="eHG-xa-l26"/>
+                            <constraint firstItem="XS7-dn-PJ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="fcx-Ig-kOX"/>
+                            <constraint firstItem="WPy-lm-USI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g5j-kc-9Hb"/>
+                            <constraint firstItem="o2V-02-Nvn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="wdB-ds-Rm6"/>
+                            <constraint firstItem="WPy-lm-USI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="xqr-eS-Pb4"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="BGWebView" destination="o2V-02-Nvn" id="sCU-Lf-m2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headerTitle" width="218" height="66"/>
+    </resources>
+</document>
